@@ -21,7 +21,7 @@
     (jdbc/query db ["select name, ingredient from product"]))
 
   (delete-product! [this name]
-    (jdbc/delete! db :product ["name ?" name]))
+    (jdbc/delete! db :product ["name = ?" name]))
 
   (stop [this]
     (hikari/close-datasource (:datasource db)))
