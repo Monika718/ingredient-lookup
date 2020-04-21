@@ -6,6 +6,7 @@
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [org.clojure/core.async "0.3.443"]
                  [org.clojure/java.jdbc "0.7.8"]
+                 [com.h2database/h2 "1.4.197"]
                  [hikari-cp "1.7.5"]]
   :plugins [[lein-package "2.1.1"]
             [lein-immutant "2.0.1"]]
